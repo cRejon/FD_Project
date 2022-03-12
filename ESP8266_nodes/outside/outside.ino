@@ -56,7 +56,7 @@ void sendMQTT(){
   StaticJsonDocument<125> msg;
   msg["id"] = "outside";
   msg["signal"]= rssi;
-  JsonObject measurements  = msg.createNestedObject("measurements");
+  JsonObject measurements  = msg.createNestedObject("values");
   
   measurements["outTemp"] = outTemp;
   measurements["outHum"] = outHum;

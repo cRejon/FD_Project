@@ -72,7 +72,7 @@ void sendMQTT(){
   StaticJsonDocument<125> msg;
   msg["id"] = "deposit";
   msg["signal"]= rssi;
-  JsonObject measurements  = msg.createNestedObject("measurements");
+  JsonObject measurements  = msg.createNestedObject("values");
   measurements["waterTemp"] = waterTemp;
   measurements["pump"] = pump;
 
