@@ -18,8 +18,6 @@ import plotly.graph_objs as go
 from pinform.client import InfluxClient
 from ORM_influxdb import Inside, Outside, Deposit, Climat, Irrigation, ClimatControl
 
-
-
 from layout import get_gateway_connection
 
 import layout_facilities
